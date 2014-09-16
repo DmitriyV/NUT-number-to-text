@@ -43,6 +43,13 @@ namespace Nut.TextConverters
                         Names = new[] { "рубль", "рубля", "рублей" },
                         ChildCurrency = new BaseCurrencyModel { Names = new[] { "копейка", "копейки", "копеек" } }
                     };
+                case Currency.RUBdot:
+                    return new CurrencyModel
+                    {
+                        Currency = currency,
+                        Names = new[] { "руб.", "руб.", "руб." },
+                        ChildCurrency = new BaseCurrencyModel { Names = new[] { "коп.", "коп.", "коп." } }
+                    };
                 case Currency.TRY:
                     return new CurrencyModel 
                     {

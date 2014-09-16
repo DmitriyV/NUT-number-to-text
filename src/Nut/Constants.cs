@@ -22,5 +22,6 @@ namespace Nut.Constants {
         public const string RUB = "rub";
         public const string TRY = "try";
         public const string USD = "usd";
+        public const string RUBdot = "rub.";
     }
 }

@@ -16,7 +16,7 @@ namespace Nut.Demo {
         {
             InitializeComponent();
             cmbLang.DataSource = new List<string>() { "en", "es","fr", "ru", "tr" };
-            cmbCurrency.DataSource = new List<string>() { "usd", "eur", "rub", "try" };
+            cmbCurrency.DataSource = new List<string>() { "usd", "eur", "rub", "try", "rub." };
         }
 
         private void btnMoneyToText_Click(object sender, EventArgs e) 
