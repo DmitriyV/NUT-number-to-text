@@ -1,11 +1,13 @@
-﻿using System;
-using System.Linq;
-using System.Text;
-using Nut.Constants;
-using Nut.Models;
-
-namespace Nut.TextConverters 
+﻿namespace Nut.TextConverters 
 {
+    using System;
+    using System.Linq;
+    using System.Text;
+    using Constants;
+    using Models;
+
+    using System.Globalization;
+
     public abstract partial class BaseConverter 
     {
         public virtual string ToText(decimal num, string currency) 
@@ -14,8 +16,8 @@ namespace Nut.TextConverters
             if (currency == Currency.TL) currency = Currency.TRY;
             var currencyModel = GetCurrencyModel(currency);
             if (currencyModel == null) return string.Empty;
-            var decimalSeperator = num.ToString().Contains(",") ? ',' : '.';
-            var nums = num.ToString().Split(decimalSeperator);
+            var decimalSeperator = num.ToString(CultureInfo.InvariantCulture).Contains(",") ? ',' : '.';
+            var nums = num.ToString(CultureInfo.InvariantCulture).Split(decimalSeperator);
 
             var mainNum = Convert.ToInt64(nums[0]);
             builder.Append(ToText(mainNum));
