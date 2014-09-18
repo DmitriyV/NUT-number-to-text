@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>NutFork</id>
+    <version>1.0.1</version>
+    <authors>Dmitriy</authors>
+    <owners>Dmitriy</owners>
+    <projectUrl>https://github.com/DmitriyV/NUT-number-to-text</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Number To Text</description>
+    <releaseNotes>Some bugs fixed</releaseNotes>
+    <copyright>Copyright 2014</copyright>
+    <tags>Number to text</tags>    
+  </metadata>
+</package>
