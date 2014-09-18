@@ -26,7 +26,7 @@
 
             if (nums.Count() > 1 && !string.IsNullOrEmpty(nums[1])) 
             {
-                var childNum = Convert.ToInt64(nums[1].Substring(0, 2));
+                var childNum = Convert.ToInt64(nums[1].Substring(0, nums[1].Length));
                 if (childNum != 0) 
                 {
                     builder.Append(" ");
@@ -34,7 +34,6 @@
                     builder.Append(" ");
                     builder.Append(GetChildCurrencyText(childNum, currencyModel));
                 }
-
             }
 
             return builder.ToString().Trim();
