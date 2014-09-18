@@ -30,7 +30,7 @@
                 if (childNum != 0) 
                 {
                     builder.Append(" ");
-                    builder.Append(ToText(childNum));
+                    builder.Append(ToText(childNum, true));
                     builder.Append(" ");
                     builder.Append(GetChildCurrencyText(childNum, currencyModel));
                 }
