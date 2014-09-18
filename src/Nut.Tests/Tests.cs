@@ -1,6 +1,5 @@
 ﻿namespace Nut.Tests
 {
-    using System;
     using Constants;
     using NUnit.Framework;
 
@@ -9,8 +8,8 @@
         [Test]
         public void Test()
         {
-            var dec = new decimal(13.5);
-            Console.WriteLine(dec.ToText(Currency.RUB, Language.Russian));
+            const decimal dec = 13.5m;
+            Assert.AreEqual("тринадцать рублей пять копеек", dec.ToText(Currency.RUB, Language.Russian));
         }
     }
 }
