@@ -26,7 +26,7 @@
 
             if (nums.Count() > 1 && !string.IsNullOrEmpty(nums[1])) 
             {
-                var childNum = Convert.ToInt64(nums[1].Substring(0, nums[1].Length));
+                var childNum = Convert.ToInt64(nums[1].PadRight(2, '0'));
                 if (childNum != 0) 
                 {
                     builder.Append(" ");
