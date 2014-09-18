@@ -163,3 +163,7 @@ node_modules/
 *.css.patch
 
 deploy/
+/src/.nuget/NuGet.Config
+/src/.nuget/NuGet.exe
+/src/.nuget/NuGet.targets
+/src/*.suo
